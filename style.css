@@ -1,4 +1,12 @@
 body{
     background: linear-gradient(rgb(153, 153, 228), rgb(216, 157, 157));
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: // <uniquifier>: Use a uniquifier for the class name
+    // <weight>: Use a value from 400 to 700
+    
+    .kode-mono-<uniquifier> {
+      font-family: "Kode Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    };
 }
