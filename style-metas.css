@@ -82,25 +82,25 @@ body {
         .botao:last-child {
             border-radius: 0 40px 0 0;
         }
-    }
-    código javascript para main.jsconst botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".aba-conteudo");
-
-for (let i = 0; i < botoes.length; i++) {
-    botoes[i].onclick = function () {
-
-        for (let j = 0; j < botoes.length; j++) {
-            botoes[j].classList.remove("ativo");
-            textos[j].classList.remove("ativo");
-        }
-
-        botoes[i].classList.add("ativo");
-        textos[i].classList.add("ativo");
-    }
+    .abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
 }
 
-const contadores = document.querySelectorAll(".contador");
-const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
-let tempoAtual = new Date();
+.aba-conteudo{
+    display: none;
+}
 
-contadores[0].textContent = tempoObjetivo1 - tempoAtual;
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
