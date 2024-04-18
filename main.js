@@ -44,3 +44,13 @@ else{
         return " PRAZO ENCERRADO!!! "
  }
 }
+function atualizaCronometro(){
+        //laço de repetição para interagir com todos os objetivos
+        for (let i = 0; i < contadores.length; i++){
+                contadores[i].textContent = calculaTempo(tempos [i]);
+        }
+}
+funcion comecaCronometro(){
+        atualizaCronometro(); //chamada a função criada anteriormente dentro desta função
+        setInterval(atualizaCronometro, 1000);
+}
