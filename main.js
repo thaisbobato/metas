@@ -43,3 +43,4 @@ function calculaTempo(tempoObjetivo) {
 else{
         return " PRAZO ENCERRADO!!! "
  }
+}
