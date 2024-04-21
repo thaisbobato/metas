@@ -54,3 +54,5 @@ funcion comecaCronometro(){
         atualizaCronometro(); //chamada a função criada anteriormente dentro desta função
         setInterval(atualizaCronometro, 1000);
 }
+
+comecaCronometro(); //chamada a função que inicia o cronômetro
