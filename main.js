@@ -50,7 +50,7 @@ function atualizaCronometro(){
                 contadores[i].textContent = calculaTempo(tempos [i]);
         }
 }
-funcion comecaCronometro(){
+function comecaCronometro(){
         atualizaCronometro(); //chamada a função criada anteriormente dentro desta função
         setInterval(atualizaCronometro, 1000);
 }
